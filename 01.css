@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Poppins', sans-serif;
+}
 .container{
     max-width: 1000px;
     margin: 60px auto;
@@ -13,8 +16,47 @@
 .card{
     /* outline: 1px solid green; */
     position: relative;
-    margin:200px;
+    margin:100px 300px;
     /* overflow: hidden; */
+}
+.text{
+    /* outline:1px solid red; */
+    transform: translate(-50%,0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:700px;
+    height:500px;
+    position: absolute;
+    left:30%;
+    top:10%;
+}
+.title{
+    font-weight: 400;
+    color:#f8c461;
+    font-size: 35px;
+}
+.subtitle{
+    font-weight: 600;
+    color:#232323;
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+.discount{
+    border:1px solid #232323;
+    padding: 10px 50px;
+}
+.shop{
+    background:#f8c461;
+    padding:10px 20px;
+    margin:30px;
+    box-shadow: .5px 3px 5px #afafaf;
+    transition: .5s;
+}
+.shop:hover{
+    background: rgba(17, 8, 7, 1);
+    color:rgb(255, 226, 245);
 }
 .card .picture-switches{
     /* outline:1px solid red; */
@@ -22,16 +64,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100px;
-    height:100px;
+    width:50px;
+    height:50px;
     position: absolute;
     left:50%;
     bottom:0;
 }
 .picture-switches .picture1,
 .picture-switches .picture2{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     font-size: 24px;
     background: rgba(17, 8, 7, 1);
     color:rgb(255, 226, 245);
@@ -57,7 +99,7 @@ a{
     width: 1.2em;
     height: 2em;
     font-size: 24px;
-    background: rgba(17, 8, 7, 0.5);
+    background: rgba(17, 8, 7, 1);
     color:rgb(255, 232, 214);
     display: flex;
     justify-content: center;
